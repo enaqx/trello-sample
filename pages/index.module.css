@@ -1,0 +1,96 @@
+.container {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  flex-direction: row;
+  padding: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.column {
+  background: rgba(216, 216, 216, 0.8);
+  margin: 1rem;
+  width: 30%;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.column:hover {
+  background: rgba(197, 197, 197, 0.8);
+}
+
+.columnHeader {
+  display: flex;
+  flex-direction: row;
+}
+
+.itemContainer {
+  padding: 0.5rem;
+  background: rgba(163, 163, 163, 0.7);
+  margin: 1rem;
+  color: rgb(41, 41, 41);
+  font-weight: 100;
+  cursor: move;
+  cursor: grab;
+  border-radius: 3px;
+  transition: background 0.5s;
+  width: 12rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+  overflow: auto;
+}
+
+.itemContainer:hover {
+  color: rgb(29, 29, 29);
+
+  background: rgba(134, 145, 109, 0.7);
+}
+
+.columnLabel {
+  color: #312222;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+
+.deleteColumnButton {
+  margin-left: 2rem;
+  margin-top: 1.2rem;
+  height: 2rem;
+  align-self: baseline;
+}
+
+.deleteCardButton {
+  height: 2rem;
+  align-self: baseline;
+}
+
+.input {
+  margin: 1rem auto;
+  height: 2rem;
+  width: 12rem;
+  border-radius: 3px;
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+
+.addNewContainer {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
